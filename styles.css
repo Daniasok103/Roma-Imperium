@@ -1,0 +1,196 @@
+/* master styles */
+
+body {
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* nav styles */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a { 
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 20px;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid red;
+}
+
+.nav-link-wrapper a:hover {
+    color: rgb(238, 97, 16);
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+    mix-blend-mode: screen;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: rgb(197, 216, 27);
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%)
+}
+
+.subtitle {
+    font-size: 25px;
+    font-family: "Libre Baskerville";
+
+}
+
+/* About Page Styles */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    margin: 30px;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+    
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen; 
+    margin: 20px;
+}
+
+/* p {
+    font-size: 26px;
+    margin: 20px;
+} */
+
+.blog {
+    border: 20px solid rgb(216, 71, 27);
+	padding: 20px;
+	max-width: 700px;
+	width: 80%;
+    margin: 20px auto; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.quote:first-letter {
+    font-size: 30px;
+}
+
+.quote {
+    border-left: 5px solid rgb(216, 71, 27);
+    padding-left: 5px;
+}
+
+.date {
+    color: #3498db;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+h2 {
+    color: #5f0808;
+    font-size: 2.0rem;
+}
+
+/* Flaired edges, by Tomas Theunissen */
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-top: 22px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}

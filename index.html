@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roman Imperium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Roma Imperia</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="blog.html">Blog</a>
+                </div>
+            </div>
+        
+        
+
+        <div class="right-side"></div>
+            <div class="brand">
+                <div>Designed by Daniil Sokol</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+        
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/roma11.jpg)"></div>
+            
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/roma7.png"alt="">
+                    </div>
+
+                    <div class="subtitle">Roma Invicta</div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/roma4.jpg)"></div>
+            
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/roma7.png"alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        Gaius Octavian
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/roma3.jpg)"></div>
+            
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/roma7.png"alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        Graeco Gratus
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/roma2.jpg)"></div>
+            
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/byz8.png"alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        Auribus teneo lupum
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/julius1.jpg)"></div>
+            
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/roma7.png"alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        Julius Caesar
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/roma6.jpg)"></div>
+            
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/byz8.png"alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        Quo usque pro Roma Ibis?
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/roma8.jpg)"></div>
+            
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/roma7.png"alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        Homos facio vita
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/rome9.jpg)"></div>
+            
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/byz8.png"alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        Constantine I
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/roma54.jpg)"></div>
+            
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/roma7.png"alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        Eternus Vita
+                    </div>
+                </div>
+            </div>
+
+        
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioitems.forEach(portfolioitem => {
+        portfolioitem.addEventListener('mouseover', () => {
+            console.log(portfolioitem.childNodes[1].classList);
+            portfolioitem.childNodes[1].classList.add('img-darken');
+        })
+
+    portfolioitem.addEventListener('mouseout', () => {
+        portfolioitem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html> 
